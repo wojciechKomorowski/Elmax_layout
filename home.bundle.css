@@ -134,6 +134,10 @@ button:focus {
 .topbar__pipe {
   padding: 0 1rem; }
 
+@media (max-width: 380px) {
+  .root__topbar {
+    font-size: 0.65rem; } }
+
 .root__navbar {
   width: 100%;
   height: 75px;
@@ -239,6 +243,11 @@ button:focus {
     font-size: 1rem;
     margin: 1rem 0;
     line-height: 2; } }
+
+@media (max-width: 480px) {
+  .logo__image {
+    width: 120px;
+    height: 50px; } }
 
 .root__header {
   line-height: 1.5;
@@ -361,7 +370,7 @@ button:focus {
     -ms-flex-align: center;
         align-items: center;
     padding: 4rem 0;
-    margin: 0 6rem;
+    margin: 0 4rem;
     background-color: #f0efef; }
 
 .kitchen__title, .house__title, .hair__title {
@@ -483,6 +492,7 @@ button:focus {
 
 @media (max-width: 1105px) {
   .agd__kitchen .box, .agd__house .box, .agd__hair .box {
+    margin: 0 2rem;
     padding: 2rem 0; }
   .kitchen__products, .house__products, .hair__products {
     text-align: center; }
@@ -522,6 +532,8 @@ button:focus {
     margin: 2rem; } }
 
 @media (max-width: 480px) {
+  .agd__kitchen .box, .agd__house .box, .agd__hair .box {
+    margin: 0; }
   .agd__title {
     font-size: 2rem; }
   .products__image--kitchen, .products__image--hair {
@@ -729,6 +741,7 @@ button:focus {
 
 @media (max-width: 1105px) {
   .rtv__electronics .box {
+    margin: 0 2rem;
     padding: 2rem 0; }
   .electronics__products {
     text-align: center; }
@@ -764,6 +777,8 @@ button:focus {
       padding: 0.5rem; } }
 
 @media (max-width: 480px) {
+  .rtv__electronics .box {
+    margin: 0; }
   .rtv__title {
     font-size: 2rem; }
   .products__image--rtv {
@@ -901,15 +916,31 @@ button:focus {
         flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    -ms-flex-align: center;
-        align-items: center;
-    padding-top: 8rem;
-    padding-bottom: 4rem; }
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+
+.contact__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Raleways", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 4rem; }
+
+.contact__company {
+  text-align: center;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .contact__info {
-  width: 50%;
+  width: 40%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -922,9 +953,10 @@ button:focus {
       align-items: flex-start; }
 
 .contact__map {
-  width: 50%;
-  height: 400px;
-  text-align: right; }
+  width: 60%;
+  height: 650px;
+  text-align: right;
+  padding-top: 1rem; }
 
 .map__iframe {
   width: 100%;
@@ -938,7 +970,7 @@ button:focus {
     animation-fill-mode: forwards; }
 
 .contact__info div {
-  width: 300px;
+  width: 250px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -954,10 +986,6 @@ button:focus {
 .info__title {
   font-size: 1.75rem; }
 
-.info__company {
-  font-size: 1.25rem;
-  padding: 1rem 0; }
-
 .contact__info div * {
   color: white;
   text-decoration: none; }
@@ -970,6 +998,42 @@ button:focus {
   padding-right: 1rem; }
   .contact__info div :first-child:hover {
     animation: none; }
+
+@media (max-width: 760px) {
+  .contact__info {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .contact__map {
+    width: 100%;
+    height: 300px;
+    text-align: right;
+    padding-top: 4rem; } }
+
+@media (max-width: 615px) {
+  .contact__info {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+  .contact__info div {
+    width: 90%;
+    padding-left: 1rem; } }
 
 .root__footer {
   line-height: 1.5;
