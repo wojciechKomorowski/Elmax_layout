@@ -284,6 +284,7 @@ button:focus {
 
 .header__subtitle {
   font-size: 2rem;
+  padding-top: 2rem;
   padding-bottom: 2rem; }
 
 .header__text {
@@ -291,6 +292,8 @@ button:focus {
   font-size: 1rem; }
   .header__text p {
     margin-top: 1rem; }
+  .header__text p:first-child {
+    margin-top: 0; }
 
 .header__arrow {
   width: 100px;
@@ -307,9 +310,7 @@ button:focus {
 
 @media (max-width: 1205px) {
   .header__subtitle {
-    font-size: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem; } }
+    font-size: 2rem; } }
 
 @media (max-width: 480px) {
   .header__title {
